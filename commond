@@ -1,0 +1,15 @@
+git init 初始化git仓库
+git add <file> 把文件添加进去（把文件修添加到暂存区）
+git commit -m "what are you doing" 提交更改（把所有文件修改添加到当前分支）
+git status 查看仓库当前状态
+git diff (difference) 查看修改内容
+git log 查看每个版本备注 （--pretty=oneline简写）
+HEAD 当前版本 HEAD^ 上一个版本 HEAD^^ 上上一个版本 HEAD~100 前100个版本
+git reset --hard HEAD^回退到上一个版本
+git reset --hard commit_id 回退到未来某个版本
+git reflog 记录了每一次命令
+git diff HEAD -- <file>查看工作区和版本库里最新版本的区别
+git checkout -- <file>把文件在工作区的修改全部撤销，回到最近一次git commit或git add时的状态
+git reset HEAD file把暂存区的修改回退到工作区（HEAD表示最新的版本）
+git push origin master把本地master分支的最新修改推送至Gtihub
+git clone git@github.com:393149188@qq.com/name.git  https://github.com/0-1heyi/name.git克隆一个本地库
