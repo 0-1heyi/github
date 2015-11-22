@@ -56,12 +56,13 @@ int main()
 	read_in_network_link_list(graph, filename);
 	vector<int> result(max_number_node, 0);
 	for(int i =1; i < max_number_node; i ++) {
-		int num =1;
 		if(!graph[i].know) {
+			int num =1;
 			dfs(graph, i, num);
 			result[i] = num;
+			cout << num << " ";
 		}
 	}
 	sort(result.begin(), result.end());
-	cout << result[max_number_node -1];
+	//cout << result[max_number_node -1];
 }
